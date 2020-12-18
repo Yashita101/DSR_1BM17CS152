@@ -1,0 +1,19 @@
+#create a matrix of 3 * 3 dimension by loading the data to the matrix. Arrange the element of the matrix by row wise.Add a suitable column then do the following operations find the determinant, inverse of the matrix, transpose of the matrix.
+v1<-c(4,0,0,0,0,2,0,1,2)
+v1
+v2<-seq(4,20,2)
+v2
+m<-matrix(v1,nrow=3,ncol=3,byrow=TRUE)
+m
+dimension<-dim(m)
+dimension
+determinant(m)
+det(m)
+solve(m)
+t(m)
+m<-rbind(m,c(0,0,0))
+m<-cbind(m,c(1,0,0,1))
+m
+det(m)
+solve(m)
+t(m)
